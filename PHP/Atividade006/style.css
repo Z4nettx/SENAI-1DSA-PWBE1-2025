@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 600 16px 'system-ui';
+    color: #fff;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    height: 15vh;
+    width: 100%;
+    background: rgba(0, 0, 0, .5);
+    padding: 5px;
+    align-items: center;
+    z-index: 1000;
+}
+
+h1 {
+    width: 750px;
+
+}
+
+header img {
+    width: 70px;
+    border-radius: 50%;
+}
+
+form fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    font-size: 25px;
+    color: #fff;
+    width: 70vw;
+    height: 70vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: url(belo.jpg) top left / cover;
+}
+
+main img {
+    position: fixed;
+    height: 550px;
+    top: 110px;
+    animation: entrando 2s forwards ease;
+    animation-delay: 1s;
+    left: 100%;
+}
+
+@keyframes entrando {
+    100% {
+        left: 75%;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(2px);
+    border-radius: 30px;
+    width: 50vw;
+    height: 70vh;
+    margin: 110px auto;
+    padding: 20px;
+}
+form p {
+    margin: 10px 20px;
+}
+fieldset input {
+    background: none;
+    border: none;
+    outline: none;
+    width: 250px;
+    border-bottom: 1.5px solid #fff;
+    color: #fff;
+    font-size: 16px;
+
+}
+
+fieldset input,
+fieldset select {
+    width: 250px;
+    height: 30px;
+    text-align: center;
+}
+
+fieldset button {
+    padding: 15px 100px;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 100px;
+    transition: .5s ease;
+}
+
+button:hover {
+    transform: scale(1.1) translateY(-5px);
+    background: #fff;
+    color: #000;
+}
+::placeholder {
+    color: #ffffffb7;
+}
